@@ -15,10 +15,10 @@
             <div class="left">My Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Contect</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Contect</a></li>
                 </ul>
             </div>
         </nav>
@@ -26,17 +26,25 @@
 
     <main>
         <section class="first-section">
-            <div class="left-section">Hi, My name is Suresh Suthar
+            <div class="left-section">Hi, My name is <span class="highlight">Suresh Suthar</span>
                 <div>
-                    I am a web devloper
+                    And I am a <br> <span class="highlight"><span id="element">web devloper</span></span>
                 </div>
             </div>
             <div class="right-section">
-                <img src="img2.png" alt="img2">
+                <img src="img3.png" alt="web dev img">
 
             </div>
         </section>
     </main>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["Web Developer"],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
