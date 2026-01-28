@@ -39,6 +39,13 @@ nav ul li a:hover {
     color: rgb(151, 253, 166);
 }
 
+main hr {
+    border: 0;
+    height: 1.5px;
+    margin: 5%;
+    background: rgb(104, 253, 104);
+}
+
 .left {
     font-size: 20px;
 }
@@ -47,7 +54,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px;
+    margin: 130px 100px;
 }
 
 .first-section div {
@@ -56,16 +63,36 @@ nav ul li a:hover {
 }
 
 .left-section {
-    font-size: xx-large;
+    font-size: 2.5rem;
 }
 
 .highlight {
     color: rgb(121, 242, 121);
 }
 
-.right-section {}
-
 .right-section img {
     width: 300px;
     margin: 20px 50px;
+}
+
+.second-section {
+    height: 80vh;
+    margin: 96px;
+}
+
+.second-section .box {
+    display: flex;
+    margin: 40px 0;
+    gap: 15rem;
+}
+
+.second-section .box .vertical ul {
+    margin: 10px 0;
+}
+
+.second-section .box .vertical ul li {
+    display: block;
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(173, 253, 157);
 }
