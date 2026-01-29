@@ -96,3 +96,31 @@ main hr {
     font-weight: 200;
     color: rgb(173, 253, 157);
 }
+
+footer {
+    height: 250px;
+    background: rgb(53, 46, 46);
+    box-sizing: border-box;
+}
+
+.footer {
+    display: flex;
+    font-size: 0.8rem;
+    margin: 20px 50px;
+    padding: 25px 0px;
+    justify-content: space-around;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 20px;
+}
+
+.second ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.second ul li a:hover {
+    color: rgb(151, 253, 166);
+}
