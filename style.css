@@ -39,6 +39,25 @@ nav ul li a:hover {
     color: rgb(151, 253, 166);
 }
 
+
+/* underline */
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgb(151, 253, 166);
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* underline */
+
 main hr {
     border: 0;
     height: 1.5px;
