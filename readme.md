@@ -1,1 +1,1 @@
-Making a portfolio website of mine.
+Making a portfolio website.
