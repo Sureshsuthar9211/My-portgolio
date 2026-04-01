@@ -6,16 +6,112 @@
     padding: 0;
 }
 
-body {
-    background-color: #466464;
-    color: white;
-    font-family: "Poppins", sans-serif;
+
+/* navbar*/
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 70px;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(74, 128, 141, 1);
 }
 
 .first-section {
     background-image: linear-gradient(200deg, var(--primary-color), var(--secondry-color));
-    height: 50vh;
+    height: 40vh;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin: 10px 10px;
+    margin: 20px 30px;
+}
+
+.first-left-section {
+    width: 60%;
+    display: inline;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.first-right-section {
+    width: 40%;
+}
+
+.first-right-section img {
+    width: 150px;
+    display: block;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.second-section {
+    height: 50vh;
+    margin: 30px;
+}
+
+.second-section h1 {
+    font-size: 1.5rem;
+}
+
+.second-section .box {
+    display: flex;
+    gap: 1rem;
+    margin: 20px 0;
+}
+
+.second-section .box .vertical {
+    width: 30%;
+}
+
+.second-section .box .vertical ul {
+    margin: 10px 0;
+}
+
+.second-section .box .vertical ul li {
+    display: block;
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(173, 253, 157);
+}
+
+
+/*  ----------------- Designing footer ----------------------- */
+
+footer {
+    bottom: 0;
+    height: 30vh;
+    background: rgb(53, 46, 46);
+    box-sizing: border-box;
+}
+
+.footer {
+    display: flex;
+    font-size: 0.6rem;
+    margin: 0 10px;
+    justify-content: space-around;
+}
+
+.first,
+.second,
+.third {
+    width: 30%;
+    display: inline;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.second ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.second ul li a:hover {
+    color: rgb(151, 253, 166);
 }
