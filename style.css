@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    width: 100%;
     background-color: #466464;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -47,7 +48,7 @@ nav ul li {
     padding: 10px;
 }
 
-nav ul li a {
+a {
     text-decoration: none;
     color: white;
 }
@@ -75,21 +76,16 @@ nav ul li a:hover::after {
 
 /* underline */
 
-hr {
-    border: 0;
-    height: 1.5px;
-    margin: 5%;
-    background: rgb(104, 253, 104);
-}
-
 .left {
     font-size: 20px;
 }
 
+
+/* designing first section */
+
 .first-section {
     background-image: linear-gradient(200deg, var(--primary-color), var(--secondry-color));
     height: 50vh;
-    width: auto;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -113,6 +109,13 @@ hr {
 .right-section img {
     width: 300px;
     margin: 20px 50px;
+}
+
+hr {
+    border: 0;
+    height: 1.5px;
+    margin: 5%;
+    background: rgb(104, 253, 104);
 }
 
 .second-section {
