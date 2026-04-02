@@ -17,7 +17,7 @@ html {
 
 body {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-color: #466464;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -32,7 +32,7 @@ nav {
     top: 0;
     display: flex;
     height: 70px;
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(74, 128, 141, 1);
@@ -95,18 +95,26 @@ nav ul li a:hover::after {
 }
 
 .first-left-section {
-    font-size: 2.5rem;
-    width: 40%;
-    display: inline;
+    width: 60%;
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    animation: float 2s ease-in-out infinite;
 }
 
 .highlight {
     color: rgb(121, 242, 121);
 }
 
+.first-right-section {
+    width: 40%;
+    display: grid;
+    justify-content: center;
+}
+
 .first-right-section img {
-    width: 300px;
-    margin: 20px 50px;
+    width: 200px;
+    animation: float 2s ease-in-out infinite;
 }
 
 hr {
@@ -168,4 +176,16 @@ footer {
 
 .second ul li a:hover {
     color: rgb(151, 253, 166);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
