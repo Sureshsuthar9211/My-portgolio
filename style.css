@@ -27,23 +27,30 @@ section {
     scroll-margin-top: 140px;
 }
 
+
+/* Navbar */
+
 nav {
     position: fixed;
     top: 0;
     display: flex;
-    height: 70px;
+    height: 4rem;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(74, 128, 141, 1);
 }
 
-nav ul {
+.left {
+    font-size: 20px;
+}
+
+.right ul {
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
+.right ul li {
     list-style: none;
     margin: 0px 25px;
     padding: 10px;
@@ -54,14 +61,14 @@ a {
     color: white;
 }
 
-nav ul li a:hover {
+.right ul li a:hover {
     color: rgb(151, 253, 166);
 }
 
 
 /* underline */
 
-nav ul li a::after {
+.right ul li a::after {
     content: "";
     width: 0;
     height: 2px;
@@ -70,15 +77,12 @@ nav ul li a::after {
     transition: 0.3s;
 }
 
-nav ul li a:hover::after {
+.right ul li a:hover::after {
     width: 100%;
 }
 
-
-/* underline */
-
-.left {
-    font-size: 20px;
+.menu {
+    display: none;
 }
 
 

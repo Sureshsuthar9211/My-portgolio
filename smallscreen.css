@@ -1,0 +1,26 @@
+nav {
+    justify-content: space-between;
+}
+
+.left {
+    margin-left: 35px;
+}
+
+.right {
+    background-color: rgba(74, 128, 141, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    display: none;
+}
+
+.right ul {
+    display: inline-table;
+}
+
+.menu {
+    display: block;
+    margin: 0 30px;
+}
