@@ -41,16 +41,16 @@ nav {
     background-color: rgba(74, 128, 141, 1);
 }
 
-.left {
+.logo {
     font-size: 20px;
 }
 
-.right ul {
+.menu ul {
     display: flex;
     justify-content: center;
 }
 
-.right ul li {
+.menu ul li {
     list-style: none;
     margin: 0px 25px;
     padding: 10px;
@@ -61,14 +61,14 @@ a {
     color: white;
 }
 
-.right ul li a:hover {
+.menu ul li a:hover {
     color: rgb(151, 253, 166);
 }
 
 
 /* underline */
 
-.right ul li a::after {
+.menu ul li a::after {
     content: "";
     width: 0;
     height: 2px;
@@ -77,11 +77,15 @@ a {
     transition: 0.3s;
 }
 
-.right ul li a:hover::after {
+.menu ul li a:hover::after {
     width: 100%;
 }
 
-.menu {
+.openMenu {
+    display: none;
+}
+
+.closeMenu {
     display: none;
 }
 

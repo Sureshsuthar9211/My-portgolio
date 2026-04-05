@@ -19,8 +19,8 @@
 <body>
     <header>
         <nav>
-            <div class="left"><a href="#home">My Portfolio</a></div>
-            <div class="right">
+            <div class="logo"><a href="#home">My Portfolio</a></div>
+            <div class="menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -28,8 +28,8 @@
                     <li><a href="#contect">Contect</a></li>
                 </ul>
             </div>
-            <div class="menu"><i class="ri-align-justify"></i></i>
-            </div>
+            <div class="openMenu"><i class="ri-align-justify"></i></div>
+            <div class="closeMenu"><i class="ri-close-large-line"></i></div>
         </nav>
     </header>
 
@@ -114,7 +114,31 @@
             strings: ["Web Developer"],
             typeSpeed: 50,
         });
+
+
+        let openMenu = document.getElementsByClassName('openMenu')[0];
+        let closeMenu = document.getElementsByClassName('closeMenu')[0];
+        let menu = document.getElementsByClassName('menu')[0];
+        let body = document.querySelector('body');
+
+
+
+        openMenu.addEventListener('click', () => {
+            menu.style.display = 'block';
+            openMenu.style.display = 'none';
+            closeMenu.style.display = 'block';
+
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menu.style.display = 'none';
+            openMenu.style.display = 'block';
+            closeMenu.style.display = 'none';
+
+
+        });
     </script>
+
 </body>
 
 </html>

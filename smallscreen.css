@@ -2,25 +2,31 @@ nav {
     justify-content: space-between;
 }
 
-.left {
+.logo {
     margin-left: 35px;
 }
 
-.right {
+.menu {
     background-color: rgba(74, 128, 141, 1);
     position: absolute;
-    top: 0;
+    top: 45px;
     right: 0;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 300;
     display: none;
+    transition: 1s;
 }
 
-.right ul {
+.menu ul {
     display: inline-table;
 }
 
-.menu {
+.openMenu {
     display: block;
+    margin: 0 30px;
+}
+
+.closeMenu {
+    display: none;
     margin: 0 30px;
 }

@@ -13,7 +13,11 @@ nav {
     height: 3rem;
 }
 
-.menu {
+.openMenu {
+    display: none;
+}
+
+.closeMenu {
     display: none;
 }
 
